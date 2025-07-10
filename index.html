@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tri Nikko Zakaria</title>
+  <link href="./output.css" rel="stylesheet">
+  <script defer>
+    function toggleMenu() {
+      const nav = document.getElementById('mobile-nav');
+      nav.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+  <!-- Navbar -->
+  <header class="fixed w-full z-50 bg-[#282727] bg-opacity-60">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center px-6 py-4">
+      <div class="flex justify-between items-center w-full md:w-auto">
+        <span class="font-bold text-lg text-teal-400">Tri Nikko Zakaria</span>
+        <button class="md:hidden text-white" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <nav id="mobile-nav" class="w-full md:w-auto md:flex space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 hidden md:block">
+        <a href="#home" class="block hover:text-cyan-400">Home</a>
+        <a href="#service" class="block hover:text-cyan-400">Service</a>
+        <a href="#myproject" class="block hover:text-cyan-400">My Projects</a>
+        <a href="#abaoutme" class="block hover:text-cyan-400">About Me</a>
+        <a href="#contactme" class="block hover:text-cyan-400">Contact Me</a>
+      </nav>
+      <a href="../resume/CV_Tri_Nikko_Zakaria.pdf" class="mt-4 md:mt-0 bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 flex items-center space-x-1">
+        <span>View Resume</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div id="home" class="relative w-full h-screen flex items-center justify-center text-center">
+    <div class="absolute inset-0 bg-cover bg-center blur-sm scale-110 z-0" style="background-image: url('../gambar/coding-background-9izlympnd0ovmpli.jpg');"></div>
+    <div class="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-[#00000080] to-[#000]"></div>
+    <div class="relative z-20 text-white px-4">
+      <h1 class="text-3xl md:text-4xl font-bold">Hiii, Saya <span class="text-teal-400">Tri Nikko Zakaria</span></h1>
+      <p class="mt-4 text-base md:text-lg">Seorang <span class="text-cyan-400 font-medium">Frontend Developer</span> berpengalaman yang mengubah ide menjadi antarmuka digital yang menarik.<br>Ayo ciptakan sesuatu yang luar biasa!</p>
+    </div>
+  </div>
+
+  <!-- Service Section -->
+  <section id="service" class="bg-[#1f1f1f] py-16 px-4 md:px-8 scroll-mt-14">
+    <h2 class="text-2xl font-semibold text-center mb-8">SERVICE</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Cards -->
+      <div class="group border border-teal-400 p-6 rounded-xl hover:bg-teal-400 transition">
+        <div class="text-3xl mb-2">💻</div>
+        <h3 class="text-xl font-semibold text-teal-400 group-hover:text-white">WEB DEVELOPMENT</h3>
+        <p class="text-sm text-gray-300 group-hover:text-white">Saya menggunakan pengetahuan saya tentang berbagai bahasa pemrograman seperti HTML, CSS, PHP, dan TAILWIND untuk membangun solusi digital bagi pengguna.</p>
+      </div>
+      <div class="group border border-teal-400 p-6 rounded-xl hover:bg-teal-400 transition">
+        <div class="text-3xl mb-2">🎨</div>
+        <h3 class="text-xl font-semibold text-teal-400 group-hover:text-white">UI DESIGN</h3>
+        <p class="text-sm text-gray-300 group-hover:text-white">Menciptakan pengalaman digital yang berpusat pada pengguna dengan memadukan estetika dan fungsionalitas secara mulus, menggunakan alat desain terbaru dan antarmuka yang responsif.</p>
+      </div>
+      <div class="group border border-teal-400 p-6 rounded-xl hover:bg-teal-400 transition">
+        <div class="text-3xl mb-2">🗄</div>
+        <h3 class="text-xl font-semibold text-teal-400 group-hover:text-white">DATABASE</h3>
+        <p class="text-sm text-gray-300 group-hover:text-white">Saya menggunakan pengetahuan saya tentang berbagai teknologi basis data seperti MySQL dan PostgreeSQL untuk merancang dan mengelola solusi penyimpanan yang efisien bagi aplikasi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Projects -->
+  <section class="bg-[#1f1f1f] text-white py-16 px-4 scroll-mt-14" id="myproject">
+    <h2 class="text-center text-2xl font-semibold mb-2">
+      MY <span class="text-teal-400">PROJECTS</span>
+    </h2>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      
+      <!-- Project Card 1 -->
+      <div class="group border border-teal-400 bg-transparent hover:bg-teal-400 transition duration-300 text-white rounded-xl p-4 cursor-pointer">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img src="../gambar/myprojects/App_Laundry.JPG" alt="App Laundry" class="w-full h-48 object-cover rounded-md">
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-teal-400 group-hover:text-white transition">App Laundry</h3>
+        <p class="text-sm text-gray-300 group-hover:text-white transition">
+          Aplikasi ini bergerak dibidang Laundry. Di dalamnya terdiri dari Kasir, Admin, dan Owner. Kasir untuk mendata orang yang ingin laundry, Admin untuk menambah outlet, dan Owner untuk melihat laporan.
+        </p><br>
+        <a href="https://github.com/Trinikkooo/app_laundry" target="_blank" class="inline-block mt-4 border border-teal-400 bg-teal-400 text-white hover:bg-white hover:text-teal-500 transition px-4 py-2 rounded text-sm">
+          Repo
+        </a>
+      </div>
+  
+      <!-- Project Card 2 -->
+      <div class="group border border-teal-400 bg-transparent hover:bg-teal-400 transition duration-300 text-white rounded-xl p-4 cursor-pointer">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img src="../gambar/myprojects/Gudang-Yuk.JPG" alt="Gudang-Yuk" class="w-full h-48 object-cover rounded-md">
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-teal-400 group-hover:text-white transition">Gudang-Yuk</h3>
+        <p class="text-sm text-gray-300 group-hover:text-white transition">
+          Aplikasi penyewaan gudang dengan fitur Customer (melihat dan memesan gudang), Admin (mengelola penyewaan), dan Petugas (mengurus gudang).
+        </p><br><br>
+        <a href="https://github.com/Wildanzulfikar/Gudang-Yuk" target="_blank" class="inline-block mt-4 border border-teal-400 bg-teal-400 text-white hover:bg-white hover:text-teal-500 transition px-4 py-2 rounded text-sm">
+          Repo
+        </a>
+      </div>
+  
+      <!-- Project Card 3 -->
+      <div class="group border border-teal-400 bg-transparent hover:bg-teal-400 transition duration-300 text-white rounded-xl p-4 cursor-pointer">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img src="../gambar/myprojects/WasPas.JPG" alt="WasPas System" class="w-full h-48 object-cover rounded-md">
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-teal-400 group-hover:text-white transition">WasPas System</h3>
+        <p class="text-sm text-gray-300 group-hover:text-white transition">
+          Aplikasi pendukung keputusan untuk pemilihan lokasi cabang bisnis baru berdasarkan perhitungan berbobot.
+        </p><br><br>
+        <a href="https://github.com/NurWahidH/waspas-system" target="_blank" class="inline-block mt-4 border border-teal-400 bg-teal-400 text-white hover:bg-white hover:text-teal-500 transition px-4 py-2 rounded text-sm">
+          Repo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="abaoutme" class="bg-[#1f1f1f] py-16 px-4 md:px-8 scroll-mt-14">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <!-- FOTO DI KIRI -->
+      <div class="flex justify-center md:justify-start">
+        <img src="../gambar/profil.jpg"
+             alt="Profil"
+             class="w-48 h-48 md:w-80 md:h-80 rounded-xl border-4 border-white shadow-lg object-center" />
+      </div>
+  
+      <!-- TEKS DI KANAN -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">ABOUT <span class="text-teal-400">ME</span></h2>
+        <p class="text-gray-300 mb-4">Seorang mahasiswa Jurusan Teknik Informatika dan Komputer, Program Studi D4, di Politeknik Negeri Jakarta dengan minat mendalam pada pemrograman web. Mampu bekerja dibawah tekanan dan bekerja tim, mampu berkomunikasi dengan baik, mau belajar hal-hal baru, mudah beradaptasi, dan bertanggung jawab.</p>
+        
+        <h3 class="text-sm text-gray-400">SKILLS & TOOLS</h3>
+        <div class="flex flex-wrap gap-2 my-4">
+          <span class="bg-gray-200 text-black px-3 py-1 rounded">HTML</span>
+          <span class="bg-gray-200 text-black px-3 py-1 rounded">CSS</span>
+          <span class="bg-gray-200 text-black px-3 py-1 rounded">PHP</span>
+          <span class="bg-gray-200 text-black px-3 py-1 rounded">MySQL</span>
+          <span class="bg-gray-200 text-black px-3 py-1 rounded">TAILWIND</span>
+          <span class="bg-gray-200 text-black px-3 py-1 rounded">PostgreSQL</span>
+        </div>
+  
+        <a href="../resume/CV_Tri_Nikko_Zakaria.pdf"
+           class="inline-flex items-center bg-teal-400 hover:bg-teal-500 text-white px-4 py-2 rounded">
+          View Resume
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Me -->
+  <section id="contactme" class="bg-[#1f1f1f] py-16 px-4 md:px-8 scroll-mt-14">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold mb-4">CONTACT <span class="text-teal-400">ME</span></h2>
+      <p class="mb-6">Saya terbuka untuk peluang kerja penuh waktu, kontrak, atau paruh waktu di bidang <br>FrontEnd Development.</p>
+      <div class="bg-[#3a3a3a] rounded-md p-6 text-left">
+        <p class="mb-2">Punya ide proyek luar biasa? <br>
+          <span class="font-semibold text-teal-400">Mari kita diskusikan.</span></p>
+        <p>📞 : 0895 - 3380 - 41725</p>
+        <p>📧 : trinikko45@gmail.com</p>
+        <p>📍  : Tangerang, Banten</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#1f1f1f] py-12 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-4 text-left">
+      <div class="text-center md:text-left">
+        <h3 class="font-semibold">WEB DEVELOPER</h3>
+        <p>FRONTEND DEVELOPER</p>
+      </div>
+      <div class="text-center">
+        <ul class="space-y-1">
+          <li><a href="#home" class="hover:text-cyan-400">Home</a></li>
+          <li><a href="#service" class="hover:text-cyan-400">Service</a></li>
+          <li><a href="#myproject" class="hover:text-cyan-400">My Projects</a></li>
+          <li><a href="#abaoutme" class="hover:text-cyan-400">About Me</a></li>
+          <li><a href="#contactme" class="hover:text-cyan-400">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="text-center md:text-right">
+        <h3 class="font-semibold">SOSIAL MEDIA HANDLES</h3>
+        <div class="flex justify-center md:justify-end gap-4 mt-2">
+          <a href="https://github.com/Trinikkooo"><img src="../gambar/github.png" alt="GitHub Tri Nikko Zakaria" class="w-5 h-5"></a>
+          <a href="https://www.linkedin.com/in/tri-nikko-zakaria-9673b7270/"><img src="../gambar/linkedin.png" alt="LinkedIn Tri Nikko Zakaria" class="w-5 h-5"></a>
+          <a href="https://www.instagram.com/trinikko/?hl=en"><img src="../gambar/instagram.png" alt="Instagram Tri Nikko Zakaria" class="w-5 h-5"></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-600 mt-8 pt-4 text-center text-sm text-gray-400">
+      <span class="inline-flex items-center gap-2">
+        &copy; COPYRIGHT BY TRI NIKKO ZAKARIA
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
