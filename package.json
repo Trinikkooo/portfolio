@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
   "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify",
-  "build": "npx tailwindcss -i ./src/input.css -o ./style.css --minify && copy src\\index.html index.html"
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
 },
   "author": "",
   "license": "ISC",
